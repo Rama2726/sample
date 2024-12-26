@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+     <title>Counter App</title>
+</head>
+<body>
+    <h3 id="count_display"></h3>
+    <button id="btn1">+</button>
+    <button id="btn2">-</button>
+    <button id="btn3">Reset</button>
+    <script>
+        let count = 0;
+        const increment = document.getElementById('btn1');
+        const decrement = document.getElementById('btn2');
+        const reset = document.getElementById('btn2');
+        const ele = document.getelementById('count_dispaly');
+        increment.addEventListener('click', ()=> {
+            count++;
+            ele.innerHTML = count;
+        });
+
+        decrement.addelementListener('click',()=> {
+            count--;
+            ele.innerHTML = count;
+        });
+
+    </script>
+    
+</body>
+</html>

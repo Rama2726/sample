@@ -1,0 +1,13 @@
+<!--Promises:-->
+<script>
+    let p1 = new Promise((resolve,reject)=> {
+        setTimeout(()=>{
+            console.log('Data fetched')
+        resolve();
+},2000);
+}).then(()=>{
+        console.log('promises resolved...')
+    });
+    console.log(p1);
+
+</script>

@@ -1,0 +1,24 @@
+<!--
+1.DOM : Tree Like Structure of HTMl Code is called as DOM.
+2.document.getElementById() used to target element where given
+ID is mathing-->
+<head>
+    <title>getElementByID()</title>
+</head>
+<body>
+    <input type="text" id="in1"><br><br>
+    <input type="text" id="in2"><br><br>
+    <button onclick="addition()">Add</button>
+    <h3 id="msg"></h3>
+    <script>
+        let num1 = document.getElementById(`in1`).value;
+        console.log(num1, typeof num1);
+
+        let num2 = document.getElementsById(`in2`).value;
+        console.log(num2, typeof num2);
+
+        let res = document.getElementById(`msg`);
+        res.innertext = `Addition is ${num1+num2}`;
+    </script>
+</body>
+</html>

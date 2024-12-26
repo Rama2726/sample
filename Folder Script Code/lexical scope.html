@@ -1,0 +1,17 @@
+<script>
+    let g = 500
+    function outer() {
+        let a = 100;
+        console.log(a);
+        console.log(g);
+        console.log(b)
+        function inner() {
+            var b = 200;
+            console.log(a);
+            console.log(b);
+            console.log(g);
+        }
+        inner();
+    }
+    outer();
+</script>

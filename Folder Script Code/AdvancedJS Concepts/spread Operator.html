@@ -1,0 +1,29 @@
+<!--spread operator-->
+<script>
+    function add(...args) {//args=[]
+        if(args.length === 0) {
+            console.log('no arguments...!');
+        }
+        else {
+            let sum = 0;
+            for(let i = 0; i<args.length;i++){
+                sum = sum + args[i];
+
+            }
+            //let sum = arguments.reduce((acc,ele)=> acc + ele,0);
+            console.log('sum of arguments is ',sum);
+        }
+    }
+
+   // let sub = ()=>{
+        //if(arguments.length === 0) {
+           // console.log('no arguments')
+       // }
+        //else {
+            //let sum = arguments.reduce((acc,ele)=> acc+ele,0);
+            //console.log('Sum is:',sum);
+        //}
+   // }
+//sub();
+    
+</script>

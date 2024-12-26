@@ -1,0 +1,17 @@
+<script>
+    let p1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('Task 2');
+            resolve();
+        },5000);
+    })
+
+    async function process(){
+        console.log('Task 1');
+        await p1;
+        //p1.then(()=>console.log('Task 2'));
+        console.log('Task 3 should be executed after Task 2')
+    }
+    process();
+    console.log('task 4 which is not depend on any other task')
+</script>
